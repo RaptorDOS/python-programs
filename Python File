@@ -1,0 +1,16 @@
+def dalo():#Input function takes the limit
+        n=input("Enter the limit")
+        return n
+def fibo(n):#contains fibonacci algorithm arr is the list in which the sequence is stored
+        arr=range(0,n)
+        a=-1
+        b=1
+        for i in range(0,n):
+                arr[i]=a+b
+                a=b
+                b=arr[i]
+        return arr
+def outt(arr):#prints the list
+        print(arr)
+outt(fibo(dalo()))#calls all the functions
+
